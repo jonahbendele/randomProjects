@@ -13,17 +13,20 @@ int main()
 	double PeriodsPerTime;
 	double AcumulatedAmount;
 	int select;
-	int continueOption;
+	int continueOption{ 0 };
 	
-	
-	cout << "Select an option:\n" << endl;
-	cout << "1. solve for Principal\n" << endl;
-	cout << "2. solve for PaymentPerPeriod\n" << endl;
-	cout << "3.solve for AcumulatedAmount\n" << endl;
-	cin >> select;
-
-	switch (select)
+	while (continueOption == 0)
 	{
+		cout << "Select an option:\n" << endl;
+		cout << "1. solve for Principal\n" << endl;
+		cout << "2. solve for PaymentPerPeriod\n" << endl;
+		cout << "3.solve for AcumulatedAmount\n" << endl;
+		cin >> select;
+		cout << endl;
+		cout << endl;
+
+		switch (select)
+		{
 		case 1:
 		{
 			cout << "Enter the Acumulated Amount: ";
@@ -37,9 +40,11 @@ int main()
 			Principal = AcumulatedAmount / pow(1 + Rate / PeriodsPerTime, PeriodsPerTime * Time);
 			cout << fixed << setprecision(2);
 			cout << "The Principal amount is: $" << Principal << endl;
+			cout << endl;
+			cout << endl;
 			break;
 		}
-			
+
 		case 2:
 		{
 			cout << "Enter the Principal amount: ";
@@ -53,9 +58,11 @@ int main()
 			PaymentPerPeriod = (Principal * Rate) / PeriodsPerTime;
 			cout << fixed << setprecision(2);
 			cout << "The Payment per period is: $" << PaymentPerPeriod << endl;
+			cout << endl;
+			cout << endl;
 			break;
 		}
-			
+
 		case 3:
 		{
 			cout << "Enter the Principal amount: ";
@@ -69,15 +76,24 @@ int main()
 			AcumulatedAmount = Principal * pow(1 + Rate / PeriodsPerTime, PeriodsPerTime * Time);
 			cout << fixed << setprecision(2);
 			cout << "The accumulated amount is: $" << AcumulatedAmount << endl;
+			cout << endl;
+			cout << endl;
 			break;
 		}
 		default:
 		{
 			cout << "Invalid option." << endl;
 			break;
-	}
+		}
 		
+		}
+		cout << "Do you want to continue? (0 for yes, 1 for no): ";
+		cin >> continueOption;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
 	}
-
 	return 0;
 }
