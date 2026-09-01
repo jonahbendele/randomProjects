@@ -1,0 +1,83 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	double Principal;
+	double Rate;
+	double Time;
+	double PaymentPerPeriod;
+	double PeriodsPerTime;
+	double AcumulatedAmount;
+	int select;
+	int continueOption;
+	
+	
+	cout << "Select an option:\n" << endl;
+	cout << "1. solve for Principal\n" << endl;
+	cout << "2. solve for PaymentPerPeriod\n" << endl;
+	cout << "3.solve for AcumulatedAmount\n" << endl;
+	cin >> select;
+
+	switch (select)
+	{
+		case 1:
+		{
+			cout << "Enter the Acumulated Amount: ";
+			cin >> AcumulatedAmount;
+			cout << "Enter the Rate (as a decimal): ";
+			cin >> Rate;
+			cout << "Enter the Time: ";
+			cin >> Time;
+			cout << "Enter the number of periods per time unit: ";
+			cin >> PeriodsPerTime;
+			Principal = AcumulatedAmount / pow(1 + Rate / PeriodsPerTime, PeriodsPerTime * Time);
+			cout << fixed << setprecision(2);
+			cout << "The Principal amount is: $" << Principal << endl;
+			break;
+		}
+			
+		case 2:
+		{
+			cout << "Enter the Principal amount: ";
+			cin >> Principal;
+			cout << "Enter the Rate (as a decimal): ";
+			cin >> Rate;
+			cout << "Enter the Time: ";
+			cin >> Time;
+			cout << "Enter the number of periods per time unit: ";
+			cin >> PeriodsPerTime;
+			PaymentPerPeriod = (Principal * Rate) / PeriodsPerTime;
+			cout << fixed << setprecision(2);
+			cout << "The Payment per period is: $" << PaymentPerPeriod << endl;
+			break;
+		}
+			
+		case 3:
+		{
+			cout << "Enter the Principal amount: ";
+			cin >> Principal;
+			cout << "Enter the Rate (as a decimal): ";
+			cin >> Rate;
+			cout << "Enter the Time: ";
+			cin >> Time;
+			cout << "Enter the number of periods per time unit: ";
+			cin >> PeriodsPerTime;
+			AcumulatedAmount = Principal * pow(1 + Rate / PeriodsPerTime, PeriodsPerTime * Time);
+			cout << fixed << setprecision(2);
+			cout << "The accumulated amount is: $" << AcumulatedAmount << endl;
+			break;
+		}
+		default:
+		{
+			cout << "Invalid option." << endl;
+			break;
+	}
+		
+	}
+
+	return 0;
+}
