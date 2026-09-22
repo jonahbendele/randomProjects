@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonah Bendele - Resume</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    .contact {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .contact a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+    hr {
+      border: none;
+      border-top: 2px solid #0078d4;
+      margin: 20px 0;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: #0078d4;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .education-details {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .subtext {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jonah Bendele</h1>
+    <p class="contact">
+      Austin, Texas • <a href="tel:7374842908">737‑484‑2908</a> • 
+      <a href="mailto:jonah.bendele@gmail.com">jonah.bendele@gmail.com</a> • 
+      <a href="https://www.linkedin.com/in/jonahbendele">LinkedIn</a> • 
+      <a href="https://github.com/jonahbendele">GitHub</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Capable of using Visual Studio to make simple C and C++ programs</li>
+      <li>Native speaker of English capable of college-level reading and writing</li>
+      <li>Experience working with a team on software and hardware troubleshooting</li>
+      <li>Experience with 3D modeling in Onshape</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="education-details">
+      <span>Bachelor of Arts in Computer Information Systems</span>
+      <span>Expected Graduation – Winter 2029</span>
+    </div>
+    <p class="subtext">St. Mary’s University, San Antonio, TX</p>
+    <ul>
+      <li>Cumulative GPA: 2.8</li>
+      <li>Scholarships: Scholarship Name (Month Year)</li>
+    </ul>
+
+    <h3>Relevant Coursework</h3>
+    <ul>
+      <li>Programming I in C</li>
+      <li>Data Structures</li>
+      <li>General Geology</li>
+      <li>Rhetoric and Composition</li>
+    </ul>
+
+    <h3>Future Coursework</h3>
+    <ul>
+      <li>Algorithms</li>
+      <li>Object-Oriented Programming I</li>
+      <li>Object-Oriented Programming II</li>
+      <li>Computer Architecture</li>
+    </ul>
+  </section>
+</body>
+</html>
